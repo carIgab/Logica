@@ -1,0 +1,86 @@
+<canvas width="600" height="400"></canvas>
+
+<script> 
+	var quadro = document.querySelector("canvas")
+	var lapis = quadro.getContext('2d')
+
+	lapis.fillStyle = 'green'
+	lapis.fillRect (0 ,0 ,600,400)
+
+    lapis.fillStyle = 'yellow'
+    lapis.beginPath();
+    lapis.moveTo (300,50)
+    lapis.lineTo(100,200)
+    lapis.lineTo(500,200)
+    lapis.fill()
+    
+    lapis.fillStyle = 'yellow'
+    lapis.beginPath();
+    lapis.moveTo (300,350)
+    lapis.lineTo(100,200)
+    lapis.lineTo(500,200)
+    lapis.fill()
+    
+    lapis.fillStyle = 'blue'
+    lapis.beginPath();
+    lapis.arc(300,200,100, 2 * 3,14 )
+    lapis.fill()
+
+    lapis.fillStyle ="White"
+    lapis.fillRect(200, 187.5 , 200 , 25) 
+
+    function desenhaTexto(texto, x , y) {
+
+    lapis.font='17px Georgia';
+    lapis.fillStyle='black';
+    lapis.fillText(texto, x, y);    
+}
+
+    desenhaTexto("ORDEM E PROCESSO",210,207)
+
+    function desenhaEstrela(x, y){
+        lapis.fillStyle ="white"
+        lapis.beginPath();
+        lapis.moveTo(x, y-5);
+        lapis.lineTo(x-1, y-1);
+        lapis.lineTo(x-5, y-1);
+        lapis.lineTo(x-2, y+1);
+        lapis.lineTo(x-3, y+5);
+        lapis.lineTo(x, y+3);
+        lapis.lineTo(x+3, y+5);
+        lapis.lineTo(x+2, y+1);
+        lapis.lineTo(x+5, y-1);
+        lapis.lineTo(x+1, y-1);
+        lapis.fill();
+    }
+   
+        desenhaEstrela(243,274)
+        desenhaEstrela(250,246)
+        desenhaEstrela(250,260)
+        desenhaEstrela(256,278)
+        desenhaEstrela(230,249)
+        desenhaEstrela(235,257)
+        desenhaEstrela(229,239)
+        desenhaEstrela(240,240)
+        desenhaEstrela(278,254)
+        desenhaEstrela(270,270)
+        desenhaEstrela(287,273)
+        desenhaEstrela(299,290)
+        desenhaEstrela(290,287)
+        desenhaEstrela(296,270)
+        desenhaEstrela(286,273)
+        desenhaEstrela(350,277)
+        desenhaEstrela(340,280)
+        desenhaEstrela(334,276)
+        desenhaEstrela(320,231)
+        desenhaEstrela(343,241)
+        desenhaEstrela(305,251)
+        desenhaEstrela(313,251)
+        desenhaEstrela(295,276)
+        desenhaEstrela(323,254)
+        desenhaEstrela(318,239)
+        desenhaEstrela(364,241)
+        desenhaEstrela(373,261)
+        desenhaEstrela(290,170)
+
+    </script> 

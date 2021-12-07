@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script > 
+
+var nome = "Igor"
+var senha = "7089"
+var tentativa = 1;
+var maximotentativa = 3
+
+
+while (maximotentativa >=tentativa){
+
+var nomeInformado = prompt("Informe seu nome ");
+var senhaInformado = prompt("Caro (a) " + nomeInformado + " , Informe a sua senha . " ) ;
+
+if ( nome == nomeInformado & senha == senhaInformado  ){
+   alert (" Login Concluido, Prossiga ") 
+  break;
+} else {
+ alert(" Login Falhou , Nome ou Senha são invalidos ")
+ 
+  tentativa++ ;}
+}
+
+ </script>

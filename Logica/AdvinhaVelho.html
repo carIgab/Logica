@@ -1,0 +1,27 @@
+ <script>
+
+function mostra (frase ){
+ document.write(frase)
+}
+
+ var numberAward = Math.round(Math.random()*10);
+  var maxTentativa = 3 
+    
+
+ for(var tentativa = 0; tentativa <= maxTentativa; tentativa++) {
+
+  var numberPensado = parseInt(prompt(" Por Favor, Digite Um Número De 1 á 10 "))
+
+ if (numberAward == numberPensado){
+   alert(" Parabéns , Você Aceitou .")
+   break;
+ } 
+  else {
+  alert (" Você Errou , Digite Outro Número ")
+ }
+
+  }
+  mostra (" O Número era " + numberAward )
+
+
+     </script>

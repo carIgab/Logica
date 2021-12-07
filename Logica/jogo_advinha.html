@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+  <script>
+
+  var numberAward = Math.round(Math.random()*10);
+  var maxTentativa = 3 
+   var tentativa = 0 
+
+   while (tentativa <= maxTentativa ){
+
+    var numberPensado = parseInt(prompt(" Digite Algum Número de 1 a 10. "))
+
+   	if ( numberPensado == numberAward){
+   		document.write("Parabéns , Você Aceitou. ");
+   		break;
+   	} else { 
+        document.write("Você Errou , Tente Novamente.")
+        tentativa++
+   	}
+
+   	alert(" O numéro era" + numberPensado )
+
+  </script>

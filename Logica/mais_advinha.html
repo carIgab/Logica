@@ -1,0 +1,32 @@
+<meta charset = "UTF-8" > 
+
+<input/>
+
+<button> Digite Um Número </button>
+
+<script>
+
+	var sorteado = Math.round(Math.random() * 10 )  
+
+    console.log(sorteado)
+
+    var input = document.querySelector("input")
+     input.focus()
+
+     function verifica (){
+
+      if (input.value == sorteado){
+      	alert (" Parabéns , Você Acertou ! ")
+      } else {
+      	alert (" Você Errou ! ")
+      }
+      input.value = "" ;
+      input.focus();
+     }
+
+     var botão = document.querySelector ("button")
+
+     botão.onclick = verifica ; 
+
+  </script>
+
